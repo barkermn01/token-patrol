@@ -1,0 +1,10 @@
+.token-patrol-active {
+    cursor: crosshair;
+}
+
+.patrol-path {
+    stroke: #ff0000;
+    stroke-width: 2px;
+    fill: none;
+    opacity: 0.8;
+}
