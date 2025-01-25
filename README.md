@@ -1,45 +1,64 @@
 # Token Patrol
 
-A Foundry VTT module that enables Game Masters to create sophisticated patrol paths for NPC tokens with advanced vision mechanics.
+A Foundry VTT module that enables Game Masters to create sophisticated patrol paths for NPC tokens with advanced vision mechanics and detection systems.
 
 ## Features
 
-- Create customizable patrol paths for tokens by clicking points on the map
-- Tokens automatically move along defined patrol paths with smooth animations
-- Advanced vision cone system for realistic NPC awareness
-- Configurable vision range and cone angle settings
-- Visual feedback during patrol path creation
-- Simple and intuitive interface integrated into token controls
-- Full token patrol functionality
-- Additional patrol customization options
-- Support for advanced patrol mechanics
+- Create patrol paths for NPC tokens by clicking points on the map
+- Tokens automatically move along defined patrol paths with smooth animations and rotation
+- Integrated with Foundry's native vision and detection system
+- Token-specific configuration options available in token settings
+- Patrol controls integrated directly into token HUD for easy access
+- Start/Stop individual token patrols
+- Start/Stop all patrols simultaneously
+- Automatic pause handling - patrols respect game pause state
+- Configurable detection alerts (GM only or Public)
+- Customizable detection messages per token
+- Visual feedback during patrol operation
 
 ## Installation
 
 1. Inside Foundry VTT, select the Game Modules tab in the Configuration and Setup menu
-2. Click the Install Module button and enter the following URL: https://github.com/KeatranGaming/token-patrol/releases/latest/download/module.json
+2. Click the Install Module button and enter the following URL: https://github.com/barkermn01/token-patrol/releases/latest/download/module.json
 3. Click Install to download and install the module
 
 ## Usage
 
+### Setting Up a Patrol
 1. Select an NPC token you want to create a patrol path for
-2. Click the patrol tool icon in the token controls (route icon)
-3. Click points on the map to create the patrol path
-4. Click the patrol tool icon again to finish and start the patrol
+2. Click the play button in the token HUD to start creating a patrol path
+3. Click points on the map to create waypoints for the patrol path
+4. The token will automatically begin patrolling between these points
 
-The token will now move along the defined path continuously while utilizing the vision cone system to detect other tokens within its field of view.
+### Token Configuration
+Each patrolling token can be configured with:
+- Custom detection message
+- Vision range
+- Other token-specific settings
+
+Access these settings through the token configuration menu (right-click token → Configure).
+
+### Controls
+- Token HUD buttons for individual patrol control
+- Start/Stop buttons in token controls for managing all patrols
+- Patrols automatically pause when game is paused
 
 ### Vision System
-
-- Tokens on patrol will maintain awareness of their surroundings using a configurable vision cone
-- Vision range and cone angle can be adjusted through module settings
-- The vision system can be enabled/disabled as needed
-- Option to Alert only GM or make a Public Annoucement
-- Can set default detection text
-- Can set Token specific detection text
+- Utilizes Foundry VTT's built-in vision system
+- Tokens actively check for player characters within their vision range
+- Configurable alert system for when players are detected
+- GM can choose between private or public alerts
 
 ## Compatibility
 
 - Minimum Foundry VTT version: 10
 - Verified compatible with version: 12
 - Maximum tested version: 12
+
+## License
+
+Protected - All rights reserved
+
+## Support
+
+For issues, suggestions, or support, please visit the [GitHub repository](https://github.com/barkermn01/token-patrol)
